@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./styles.css";
+import LogEffect from "./logEffect";
 
 export default function App() {
-  return <div className="App">Blah Blah Blah</div>;
+  return <LogEffect className="App" />;
 }
