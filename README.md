@@ -1,2 +1,0 @@
-# useEffectExamples
-Created with CodeSandbox
