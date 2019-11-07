@@ -8,8 +8,12 @@ var TitleChange = () => {
     document.title = input;
   }, [input]);
 
+  var clickHandler = () => {
+    console.log("You Clicked Me!");
+  };
+
   return (
-    <form className="App">
+    <form className="App" onClick={() => clickHandler()}>
       <input value={input} onChange={e => setInput(e.target.value)} />
     </form>
   );
