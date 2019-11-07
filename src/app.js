@@ -10,7 +10,5 @@ export default function App() {
 
   const handleSubmit = e => {
     e.preventDefault();
-  };
 
-  return <Reddit className="App" />;
 }
