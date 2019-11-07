@@ -13,17 +13,16 @@ export default function App() {
 
     setSubReddit(inputValue);
   };
-  //Check
-  //Check
+
   return (
     <>
-      <form onSumbit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
         <input
           value={inputValue}
           onChange={e => setInputValue(e.target.value)}
         />
       </form>
-      <Reddit subReddit={inputValue} />
+      <Reddit subReddit={subReddit} />
     </>
   );
 }
