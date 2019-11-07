@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./styles.css";
 import LogEffect from "./logEffect";
 import Reddit from "./reddit";
+import TitleChange from "./titleChange";
 
 export default function App() {
   const [inputValue, setInputValue] = useState("reactjs");
