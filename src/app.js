@@ -10,7 +10,19 @@ export default function App() {
 
   const handleSubmit = e => {
     e.preventDefault();
-  };
 
-  return <Reddit className="App" />;
+    setSubReddit(inputValue);
+  };
+  //Check
+  return (
+    <>
+      <form onSumbit={handleSubmit}>
+        <input
+          value={inputValue}
+          onChange={e => setInputValue(e.target.value)}
+        />
+      </form>
+      <Reddit subReddit={inputValue} />
+    </>
+  );
 }
