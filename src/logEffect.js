@@ -5,10 +5,11 @@ var LogEffect = () => {
   var inputRef = useRef();
 
   useEffect(() => {
-    console.log("Render");
+    console.log("Component Mount");
 
-    inputRef.current.focus();
-  }, [inputRef]);
+    return ()=> console.log("Component Unmount");
+
+  }, []);
 
   return (
     <input
