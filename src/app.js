@@ -3,6 +3,7 @@ import "./styles.css";
 import LogEffect from "./logEffect";
 import Reddit from "./reddit";
 import TitleChange from "./titleChange";
+import "./styles.css";
 
 export default function App() {
   const [inputValue, setInputValue] = useState("reactjs");
@@ -17,7 +18,7 @@ export default function App() {
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="App">
         <input
           value={inputValue}
           onChange={e => setInputValue(e.target.value)}

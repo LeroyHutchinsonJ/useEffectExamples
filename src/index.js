@@ -4,4 +4,4 @@ import App from "./app.js";
 import TitleChangeApp from "./titleChangeApp";
 
 const rootElement = document.getElementById("root");
-ReactDOM.render(<TitleChangeApp className="App" />, rootElement);
+ReactDOM.render(<App />, rootElement);
